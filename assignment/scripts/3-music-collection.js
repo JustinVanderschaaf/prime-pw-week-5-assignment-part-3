@@ -43,3 +43,20 @@ function findArtist(artist) {
 }
 console.log(findArtist("artist1"));
 //end function to find album by artist and return them in array
+//start function to search by artist and year
+function search(artist, year) {
+  let results = [];
+  for (let i = 0; i < collection.length; i++) {
+    if (collection[i].artist === artist && collection[i].year === year) {
+      results.push(collection[i]);
+    }
+    if (artist === undefined && year == undefined) {
+      return { collection };
+    }
+  }
+  return { results };
+}
+console.log(search("artist1", 1999));
+console.log(search("Ray Charles", 1957));
+console.log(search());
+//end function to search by artist and year
