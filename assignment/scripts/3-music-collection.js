@@ -31,3 +31,15 @@ function showCollection(array) {
 }
 showCollection(collection);
 //end function to show collection title by artist published in year
+//start function to find album by artist and return them in array
+function findArtist(artist) {
+  let results = [];
+  for (let i = 0; i < collection.length; i++) {
+    if (collection[i].artist === artist) {
+      results.push(collection[i]);
+    }
+  }
+  return { results };
+}
+console.log(findArtist("artist1"));
+//end function to find album by artist and return them in array
