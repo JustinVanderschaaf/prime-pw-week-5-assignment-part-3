@@ -21,37 +21,37 @@ console.log(
 );
 console.log(
   addToCollection("forever", "artist2", 1987, [
-    { name: "aaa", duration: "1:11" },
-    { name: "bbb", duration: "2:22" },
-    { name: "ccc", duration: "3:33" },
+    { name: "ddd", duration: "1:11" },
+    { name: "eee", duration: "2:22" },
+    { name: "fff", duration: "3:33" },
   ])
 );
 console.log(
   addToCollection("space jump", "artist1", 1999, [
-    { name: "aaa", duration: "1:11" },
-    { name: "bbb", duration: "2:22" },
-    { name: "ccc", duration: "3:33" },
+    { name: "ggg", duration: "1:11" },
+    { name: "hhh", duration: "2:22" },
+    { name: "iii", duration: "3:33" },
   ])
 );
 console.log(
   addToCollection("torrent we live in", "artist3", 1999, [
-    { name: "aaa", duration: "1:11" },
-    { name: "bbb", duration: "2:22" },
-    { name: "ccc", duration: "3:33" },
+    { name: "jjj", duration: "1:11" },
+    { name: "kk", duration: "2:22" },
+    { name: "lll", duration: "3:33" },
   ])
 );
 console.log(
   addToCollection("alabama summer", "artist1", 1947, [
-    { name: "aaa", duration: "1:11" },
-    { name: "bbb", duration: "2:22" },
-    { name: "ccc", duration: "3:33" },
+    { name: "mmm", duration: "1:11" },
+    { name: "nnn", duration: "2:22" },
+    { name: "ooo", duration: "3:33" },
   ])
 );
 console.log(
   addToCollection("sanctioned", "artist2", 1988, [
-    { name: "aaa", duration: "1:11" },
-    { name: "bbb", duration: "2:22" },
-    { name: "ccc", duration: "3:33" },
+    { name: "ppp", duration: "1:11" },
+    { name: "qqq", duration: "2:22" },
+    { name: "rrr", duration: "3:33" },
   ])
 );
 console.log(collection);
