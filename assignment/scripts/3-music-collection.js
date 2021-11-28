@@ -92,11 +92,18 @@ function findArtist(artist) {
 console.log(findArtist("artist1"));
 //end function to find album by artist and return them in array
 //start function to search by artist and year
-function search(artist, year) {
+function search(artist, year, track) {
   let results = [];
   for (let i = 0; i < collection.length; i++) {
-    if (collection[i].artist === artist && collection[i].year === year) {
-      results.push(collection[i]);
+    let currentAlbum = collection[i];
+    for (let j = 0; j < currentAlbum.tracks.length; j++) {
+      if (
+        currentAlbum.artist === artist &&
+        currentAlbum.year === year &&
+        currentAlbum.tracks[j].name === track
+      ) {
+        results.push(currentAlbum);
+      }
     }
     if (artist === undefined && year == undefined) {
       return { collection };
@@ -104,7 +111,9 @@ function search(artist, year) {
   }
   return { results };
 }
-console.log(search("artist1", 1999));
-console.log(search("Ray Charles", 1957));
+console.log(search("artist1", 1999, "aaa"));
+console.log(search("artist1", 1999, "iii"));
+console.log(search("Ray Charles", 1957, "aaa"));
 console.log(search());
 //end function to search by artist and year
+console.log(collection[0].tracks[0].name);
